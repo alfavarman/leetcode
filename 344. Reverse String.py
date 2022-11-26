@@ -14,3 +14,38 @@ def reverseString(s: list[str]) -> None:
 
 reverseString(s)
 print(s)
+
+
+
+
+
+fastes:
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        self.reverse_lst(s, 0, len(s) - 1)
+
+    def reverse_lst(self, lst, start, end):
+        while start < end:
+            lst[start], lst[end] = lst[end], lst[start]
+            start += 1
+            end -= 1
+
+
+
+
+memory:
+
+
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+
+        lo = 0
+        hi = len(s) - 1
+
+        while lo < hi:
+            s[lo], s[hi] = s[hi], s[lo]
+            lo += 1
+            hi -= 1
