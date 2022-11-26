@@ -1,4 +1,4 @@
-stockProfit = [5,7,9,13,11,6,6,3,3]
+stockProfit = [5, 7, 9, 13, 11, 6, 6, 3, 3]
 target = 12
 
 

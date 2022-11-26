@@ -27,8 +27,8 @@ let buildings = [18, 14, 13, 16, 12];
 """
 
 
-'''
+"""
  LeetCode 84. Largest Rectangle in Histogram.
   LeetCode 42. Trapping Rain Water
   
-    '''
+    """

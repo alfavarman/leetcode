@@ -1,5 +1,5 @@
 def isValid(s: str) -> bool:
-    mapping = {')': '(', ']': '[', '}': '{'}
+    mapping = {")": "(", "]": "[", "}": "{"}
     stack = []
     for char in s:
         if mapping.get(char):
@@ -14,5 +14,5 @@ def isValid(s: str) -> bool:
     return not stack
 
 
-s = '()'
+s = "()"
 print(isValid(s))

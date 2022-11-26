@@ -1,7 +1,7 @@
 def order_weight(strng):
-    tokens = strng.split(' ')
+    tokens = strng.split(" ")
     if len(tokens) == 0:
-        return ''
+        return ""
 
     def sum_digits(strn: str) -> int:
         result = 0
@@ -11,13 +11,14 @@ def order_weight(strng):
 
     tokens.sort()
     sorted_tokens = sorted(tokens, key=sum_digits)
-    result = ' '.join(sorted_tokens)
+    result = " ".join(sorted_tokens)
     return result
 
 
-
 def order_weight(_str):
-    return ' '.join(sorted(sorted(_str.split(' ')), key=lambda x: sum(int(c) for c in x)))
+    return " ".join(
+        sorted(sorted(_str.split(" ")), key=lambda x: sum(int(c) for c in x))
+    )
 
 
 def sum_string(s):
@@ -35,9 +36,9 @@ def order_weight(strng):
     return result
 
 
-
 def weight_key(s):
     return (sum(int(c) for c in s), s)
 
+
 def order_weight(s):
-    return ' '.join(sorted(s.split(' '), key=weight_key))
+    return " ".join(sorted(s.split(" "), key=weight_key))

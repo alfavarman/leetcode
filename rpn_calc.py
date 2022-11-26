@@ -1,4 +1,5 @@
 from math import sqrt
+
 input1 = "3 4 2 + *"
 input2 = "5 4 2 * 3 + + sqrt"
 input3 = "3.12 4 + 2 *"
@@ -51,14 +52,13 @@ input3 = "3.12 4 + 2 *"
 #     return result
 
 
-
 def calc_RPN(strn: str) -> int:
-    operators = ['+', '-', '*', '/']
+    operators = ["+", "-", "*", "/"]
     strn_tokens = strn.split()
     stack = []
     for item in strn_tokens:
         if item in operators:
-            stack.append(eval(f'{stack.pop()}{item}{stack.pop()}'))
+            stack.append(eval(f"{stack.pop()}{item}{stack.pop()}"))
         elif item == "sqrt":
             stack.append(sqrt(stack.pop()))
         else:

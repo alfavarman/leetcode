@@ -14,12 +14,10 @@ def pivotIndex(nums: list[int]) -> int:
     #         sl += nums[l]
     # return -1
 
-
     for i in range(len(nums)):
-        if sum(nums[:i]) == sum(nums[i + 1:]):
+        if sum(nums[:i]) == sum(nums[i + 1 :]):
             return i
     return -1
-
 
     left, right = 0, sum(nums)
     for i, n in enumerate(nums):
@@ -28,6 +26,8 @@ def pivotIndex(nums: list[int]) -> int:
             return i
         right -= n
     return -1
+
+
 nums = [1, 7, 3, 6, 5, 6]
 
 print(pivotIndex(nums))

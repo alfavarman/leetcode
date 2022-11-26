@@ -1,5 +1,5 @@
 arr = [9, 2, 3, 4, 8, 3, 5, 7, 1, 0]
-arr1 = ['d', 'r', 'w', 'a', 'u']
+arr1 = ["d", "r", "w", "a", "u"]
 
 
 def get_bubblesort(arr: list, reverse: bool = False) -> list:

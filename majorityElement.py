@@ -12,12 +12,6 @@ def majorityElement(nums: list[int]) -> int:
             return num
 
 
+nums = [2, 2, 1, 1, 1, 2, 2]
 
-
-
-
-
-nums = [2,2,1,1,1,2,2]
-
-nums1 = [3,2,3]
-
+nums1 = [3, 2, 3]
