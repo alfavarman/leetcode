@@ -29,3 +29,21 @@ class SolutionTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+# most efficient solution:
+# class Solution:
+#     def search(self, nums: list[int], target: int) -> int:
+#         lo, hi = 0, len(nums)-1
+#         while lo < hi:
+#             mid = (hi-lo)//2 + lo
+#             if nums[mid] == target:
+#                 return mid
+#             elif nums[mid] > target:
+#                 hi = mid-1
+#             else:
+#                 lo = mid+1
+#
+#
+#         return -1 if nums[lo] != target else lo
