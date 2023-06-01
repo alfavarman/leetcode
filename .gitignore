@@ -3,3 +3,5 @@ venv/bin
 .idea
 venv
 *.pyc
+Pipfile
+Pipfile.lock
