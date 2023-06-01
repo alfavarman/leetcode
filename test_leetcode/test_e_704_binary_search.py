@@ -1,6 +1,6 @@
 import unittest
 
-from binary_search__easy__704 import Solution
+from e_704_binary_search import Solution
 
 
 class SolutionTest(unittest.TestCase):

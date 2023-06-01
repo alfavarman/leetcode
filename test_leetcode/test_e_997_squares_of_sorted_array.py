@@ -1,6 +1,6 @@
 import unittest
 
-from squares_of_sorted_array__easy__997 import Solution, Solution1, Solution2, Solution3
+from e_997_squares_of_sorted_array import Solution, Solution1, Solution2, Solution3
 
 
 class SolutionTest(unittest.TestCase):
